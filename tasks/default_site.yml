@@ -2,7 +2,7 @@
 
 - name: Nginx | Make sure the default site root directory is present
   file:
-    path: {{nginx_default_root}}
+    path: "{{nginx_default_root}}"
     src: "{{nginx_source_prefix}}/html"
     state: link
     force: yes

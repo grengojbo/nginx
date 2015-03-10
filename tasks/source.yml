@@ -41,12 +41,12 @@
     make install
   when: nginx_flags.changed
 
-- name: Nginx | Update the symbolic link to the nginx install
-  file:
-    path: /usr/local/nginx/default
-    src: "{{nginx_source_prefix}}"
-    state: link
-    force: yes
+# - name: Nginx | Update the symbolic link to the nginx install
+#   file:
+#     path: /usr/local/nginx/default
+#     src: "{{nginx_source_prefix}}"
+#     state: link
+#     force: yes
 
 # - name: Nginx | Install the upstart init script
 #   template:
