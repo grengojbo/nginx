@@ -11,6 +11,9 @@
     - libpcre3
     - libpcre3-dev
     - libssl-dev
+    - patch
+    - libgeoip-dev
+    - zlib1g-dev
 
 - name: Nginx | Download the Nginx source release if not yet present
   get_url:
